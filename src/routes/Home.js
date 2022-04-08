@@ -5,6 +5,7 @@ import styles from "./Home.module.css";
 function Home() {
   const [loading, setLoading] = useState(true);
   const [movies, setMovies] = useState([]);
+
   const getMovies = async () => {
     const json = await (
       await fetch(
@@ -14,9 +15,11 @@ function Home() {
     setMovies(json.data.movies);
     setLoading(false);
   };
+
   useEffect(() => {
     getMovies();
-  }, []);
+  }, []); // 최초에만 실행
+
   return (
     <div className={styles.container}>
       {loading ? (
