@@ -1,0 +1,35 @@
+.inner {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+.align {
+  text-align: center;
+  margin: 20px;
+}
+
+.align .title {
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.align .year {
+  font-size: 18px;
+}
+
+img {
+  float: left;
+  margin-right: 20px;
+}
+
+.summary {
+  font-size: 18px;
+}
+
+ul {
+  font-size: 18px;
+  margin-left: 230px;
+}
+
+ul > li {
+}
