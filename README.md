@@ -30,7 +30,9 @@
        <LoginPage />
    </Route>
    ```
-
+   
+   v6 코드
+   
    ```jsx
    <Route path="/" element={<HomePage />} />
    <Route path="/login" element={<LoginPage />} />
